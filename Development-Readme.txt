@@ -2,7 +2,7 @@ Implementation Highlights :
 1- Maven project (JUNIT Plugin , JUNIT Dependency , Spring Dependency)
 2- Simple Spring Project (start.Start class creates application context, Beans.xml)
 3- test package contains JUNIT testing classes (Just a sample)
-
+4- Interface default method (EngineType)
 Project src code  :
 
 accelerator
