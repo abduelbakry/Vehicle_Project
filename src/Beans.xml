@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id="diesel" class="engine.Diesel" scope="prototype">
+   </bean>
+   
+   <bean id="gasoline" class="engine.Gasoline" scope="prototype">
+   </bean>
+   
+   <bean id="reallyFastAccelerator" class="accelerator.ReallyFast" scope="prototype">
+   </bean>
+   
+   <bean id="fastBrake" class="brake.FastBrake" scope="prototype">
+   </bean>
+   
+   <bean id="ferrari458" class="vehicle.Car" scope="prototype" autowire="byType">
+   		
+   		<property name="topSpeed" value="210"/>
+   		<property name="engine" ref="gasoline"></property>
+   </bean>
+   
+   
+   
+
+</beans>
